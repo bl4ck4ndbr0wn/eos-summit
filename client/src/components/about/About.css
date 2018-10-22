@@ -1,0 +1,47 @@
+/* .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* The overlay effect (full height and width) - lays on top of the about-img and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  /* background-color: red; */
+  background: linear-gradient(
+    to bottom,
+    rgba(19, 139, 79, 0.911) 0%,
+    rgba(19, 79, 139, 0.685) 100%
+  );
+}
+
+/* When you mouse over the about-img, fade in the overlay icon*/
+.about-img:hover .overlay {
+  opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
+}
