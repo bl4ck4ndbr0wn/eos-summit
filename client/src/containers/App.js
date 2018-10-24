@@ -18,11 +18,7 @@ class App extends Component {
         <div class="preloader">
           <div class="loadscreen">
             <div class="loadscreen-in">
-              <img
-                class="img-fluid"
-                src="assets/img/preloader-logo.png"
-                alt=""
-              />
+              <img class="img-fluid" src="assets/img/epcolor.png" alt="" />
             </div>
           </div>
         </div>
