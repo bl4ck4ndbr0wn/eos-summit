@@ -2,81 +2,80 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer id="footer">
-      <div class="container-fluid">
-        <div class="footer-row">
-          <ul class="social-icons">
-            <li>
-              <a href="index.html#" title="Facebook">
-                <i class="fa fa-facebook" />
-              </a>
-            </li>
-            <li>
-              <a href="index.html#" title="Twitter">
-                <i class="fa fa-twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="index.html#" title="Linkedin">
-                <i class="fa fa-linkedin" />
-              </a>
-            </li>
-            <li>
-              <a href="index.html#" title="Instagram">
-                <i class="fa fa-instagram" />
-              </a>
-            </li>
-          </ul>
-          {/* <!--/.social-icons--> */}
-          <div class="subscribe-section">
-            <a href="index.html#" class="btn btn-xs btn-outline btn-subscribe">
-              Subscribe
-            </a>
-            <div class="subscribe-row">
-              <div class="row align-items-center">
-                <div class="col-lg-3">
-                  <h5>Subscribe to our Newsletters</h5>
-                  <p>
-                    Get Latest News, Information, Notifications & Announcements
-                  </p>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="input-field">
-                    <input
-                      class="form-control form-control-dark"
-                      placeholder="Name"
-                      type="text"
-                    />
-                  </div>
-                  {/* <!--/.input-field--> */}
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="input-field">
-                    <input
-                      type="email"
-                      class="form-control form-control-dark"
-                      placeholder="Email"
-                    />
-                  </div>
-                  {/* <!--/.input-field--> */}
-                </div>
-                <div class="col-lg-3 col-md-4">
-                  <button class="btn btn-dark">Subscribe</button>
-                </div>
+    <footer class="footer-top">
+      <div class="container">
+        <div class="row ml-auto">
+          <div class="col-lg-6 col-md-12 col-sm-12 col-12 footer-widget">
+            <div class="text-widget">
+              <p>
+                <span>EOS</span>
+                Summit ipsum dolor sit amet, consectetuer adipiscing elitsd
+                nonummy nibh euismod tincidunt ut laoreet dolore magn aliquam
+                erat volutpat.Lorem ipsum dolor sit amet, conse adipiscing
+                elit,sed diam nonummy. .Lorem ipsum dolor sit ametur
+                consectetuer adipiscing elit.
+              </p>
+              <div class="footer-social">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="icofont icofont-social-facebook" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icofont icofont-social-twitter" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icofont icofont-social-youtube" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="icofont icofont-social-linkedin" />
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <a href="index.html#" class="close-btn close-subscribe" />
             </div>
-            {/* <!--/.subscribe-row--> */}
           </div>
-          {/* <!--/.subscribe-section--> */}
-          <div class="footer-right">
-            &copy; 2018 EOS Summit. All Rights Reserved
+          {/* <!-- end col --> */}
+          <div class="col-lg-2 col-md-6 col-sm-6 col-12 footer-widget">
+            <div class="footer-menu">
+              <ul>
+                <li>
+                  {" "}
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="#">Speakers</a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="#">Sponsors</a>
+                </li>
+                <li>
+                  {" "}
+                  <a href="#">Partners</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          {/* <!--/.footer-right--> */}
+          {/* <!-- end col --> */}
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 footer-widget">
+            <div class="copyright text-right">
+              <p>&copy; 2018 EOS Summit | All Rights Reserved</p>
+            </div>
+            {/* <!--- END FOOTER COPYRIGHT --> */}
+          </div>
+          {/* <!-- end col --> */}
         </div>
-        {/* <!--/.footer-row--> */}
+        {/* <!--- END ROW --> */}
       </div>
-      {/* <!--/.container--> */}
+      {/* <!--- END CONTAINER --> */}
     </footer>
   );
 }

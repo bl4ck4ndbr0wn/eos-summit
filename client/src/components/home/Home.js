@@ -2,26 +2,49 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div
-      class="section fp-auto-height-responsive animated-row"
-      // data-section="slide01"
+    <section
+      id="home"
+      class="home-static-2 overlay section-back-image"
+      data-background="assets/img/bg/home-static-2.jpg"
     >
-      <div class="section-inner">
-        <div class="welcome-box">
-          <h1 class="welcome-title animate" data-animate="fadeInUp">
-            <span>Welcome to</span> EOS Summit
-          </h1>
-          <p class="animate" data-animate="fadeInUp">
-            Lorem ipsum dolor sit amet, consectetur, sed do eiusmod tempor
-            incididunt ut dolore magna aliqua.
-          </p>
-          <span class="btn next-section animate" data-animate="fadeInUp">
-            Get A ticket
-          </span>
+      <div class="container-fluid no-padding">
+        <div class="row">
+          <div class="home-static-middle col-lg-6 col-md-12 col-sm-12 col-12 text-center mx-auto">
+            <div class="home-icon">
+              <i class="icofont icofont-time" />
+            </div>
+            <p>December 20-29, 2017</p>
+            <div class="message-slider owl-carousel owl-theme">
+              <div class="message-slider-text">
+                <h2>
+                  Evanta Landing <br /> page
+                </h2>
+              </div>
+              <div class="message-slider-text">
+                <h2>
+                  Business Event <br /> Page
+                </h2>
+              </div>
+              <div class="message-slider-text">
+                <h2>
+                  Our Event <br /> Launch
+                </h2>
+              </div>
+            </div>
+            <div class="home-coming-counter">
+              <div class="countdown-container" id="clock" />
+            </div>
+            <div class="home-btn-wrapper">
+              <a href="index-2.html#about" class="js-scroll-trigger btn-home">
+                Register Now
+              </a>
+            </div>
+          </div>
+          {/* <!--- END COL --> */}
         </div>
-        {/* <!--/.welcome-box--> */}
+        {/* <!--- END ROW --> */}
       </div>
-      {/* <!--/.section-inner--> */}
-    </div>
+      {/* <!--- END CONTAINER --> */}
+    </section>
   );
 }
