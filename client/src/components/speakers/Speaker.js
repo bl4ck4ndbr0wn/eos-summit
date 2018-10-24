@@ -21,198 +21,206 @@ export default class Speaker extends Component {
             </div>
             {/* <!-- end col --> */}
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div class="card">
-                <div class="box">
-                  <div class="img">
-                    <img src="https://www.planwallpaper.com/static/images/cool-wallpaper-5_G6Qe1wU.jpg" />
-                  </div>
-                  <h2>
-                    Prakash Prajapati
-                    <br />
-                    <span>Web Graphic Designer</span>
-                  </h2>
-                  <p>
-                    {" "}
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et.
-                  </p>
-                  <span>
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-facebook" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-twitter" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-google-plus" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-linkedin" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-instagram" aria-hidden="true" />
-                        </a>
-                      </li>
-                    </ul>
-                  </span>
+              <div class="single-speaker">
+                <div class="single-speaker-header text-center">
+                  <img
+                    class="rounded-circle  img-fluid"
+                    src="assets/img/speakers/person7.jpg"
+                    alt=""
+                  />
                 </div>
+                <h2 class="text-center">
+                  Alpha Nganga
+                  <br />
+                  <span>Web Developer</span>
+                </h2>
+                <p>
+                  {" "}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et.
+                </p>
+                <span>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-google-plus" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-linkedin" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true" />
+                      </a>
+                    </li>
+                  </ul>
+                </span>
               </div>
             </div>
             {/* <!-- end col --> */}
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div class="card">
-                <div class="box">
-                  <div class="img">
-                    <img src="https://www.planwallpaper.com/static/images/cool-wallpaper-5_G6Qe1wU.jpg" />
-                  </div>
-                  <h2>
-                    Prakash Prajapati
-                    <br />
-                    <span>Web Graphic Designer</span>
-                  </h2>
-                  <p>
-                    {" "}
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et.
-                  </p>
-                  <span>
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-facebook" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-twitter" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-google-plus" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-linkedin" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-instagram" aria-hidden="true" />
-                        </a>
-                      </li>
-                    </ul>
-                  </span>
+              <div class="single-speaker">
+                <div class="single-speaker-header text-center">
+                  <img
+                    class="rounded-circle  img-fluid"
+                    src="assets/img/speakers/person7.jpg"
+                    alt=""
+                  />
                 </div>
+                <h2 class="text-center">
+                  Alpha Nganga
+                  <br />
+                  <span>Web Developer</span>
+                </h2>
+                <p>
+                  {" "}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et.
+                </p>
+                <span>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-google-plus" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-linkedin" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true" />
+                      </a>
+                    </li>
+                  </ul>
+                </span>
               </div>
             </div>
             {/* <!-- end col --> */}
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div class="card">
-                <div class="box">
-                  <div class="img">
-                    <img src="https://www.planwallpaper.com/static/images/cool-wallpaper-5_G6Qe1wU.jpg" />
-                  </div>
-                  <h2>
-                    Prakash Prajapati
-                    <br />
-                    <span>Web Graphic Designer</span>
-                  </h2>
-                  <p>
-                    {" "}
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et.
-                  </p>
-                  <span>
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-facebook" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-twitter" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-google-plus" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-linkedin" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-instagram" aria-hidden="true" />
-                        </a>
-                      </li>
-                    </ul>
-                  </span>
+              <div class="single-speaker">
+                <div class="single-speaker-header text-center">
+                  <img
+                    class="rounded-circle  img-fluid"
+                    src="assets/img/speakers/person7.jpg"
+                    alt=""
+                  />
                 </div>
+                <h2 class="text-center">
+                  Alpha Nganga
+                  <br />
+                  <span>Web Developer</span>
+                </h2>
+                <p>
+                  {" "}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et.
+                </p>
+                <span>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-google-plus" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-linkedin" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true" />
+                      </a>
+                    </li>
+                  </ul>
+                </span>
               </div>
             </div>
             {/* <!-- end col --> */}
             <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div class="card">
-                <div class="box">
-                  <div class="img">
-                    <img src="https://www.planwallpaper.com/static/images/cool-wallpaper-5_G6Qe1wU.jpg" />
-                  </div>
-                  <h2>
-                    Prakash Prajapati
-                    <br />
-                    <span>Web Graphic Designer</span>
-                  </h2>
-                  <p>
-                    {" "}
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et.
-                  </p>
-                  <span>
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-facebook" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-twitter" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-google-plus" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-linkedin" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-instagram" aria-hidden="true" />
-                        </a>
-                      </li>
-                    </ul>
-                  </span>
+              <div class="single-speaker">
+                <div class="single-speaker-header text-center">
+                  <img
+                    class="rounded-circle  img-fluid"
+                    src="assets/img/speakers/person7.jpg"
+                    alt=""
+                  />
                 </div>
+                <h2 class="text-center">
+                  Alpha Nganga
+                  <br />
+                  <span>Web Developer</span>
+                </h2>
+                <p>
+                  {" "}
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et.
+                </p>
+                <span>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-google-plus" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-linkedin" aria-hidden="true" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true" />
+                      </a>
+                    </li>
+                  </ul>
+                </span>
               </div>
             </div>
             {/* <!-- end col --> */}

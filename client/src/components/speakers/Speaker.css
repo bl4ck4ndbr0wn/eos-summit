@@ -1,47 +1,27 @@
-.card {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  min-height: 400px;
-  background: #fff;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+.single-speaker {
   padding: 30px;
   margin-bottom: 20px;
-  transition: 0.5s;
+  box-shadow: 2px 0px 15px #ddd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+}
+.single-speaker:hover {
+  box-shadow: 0 30px 70px rgba(37, 37, 37, 0.2);
+  border-radius: 0;
+  transition: 0.3s;
 }
 
-.card:hover {
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.2);
+.rounded-circle {
+  padding: 10px;
 }
-.card .box {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
-.card .box .img {
-  height: 10rem;
-  width: 10rem;
-  margin: 0 auto;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.card .box .img img {
-  height: 100%;
-  width: 100%;
-}
-.card .box h2 {
+
+.single-speaker h2 {
   font-size: 20px;
   color: #262626;
   margin: 20px auto;
 }
-.card .box h2 span {
+.single-speaker h2 span {
   font-size: 14px;
   background: #e91e63;
   color: #fff;
@@ -49,21 +29,24 @@
   padding: 4px 10px;
   border-radius: 15px;
 }
-.card .box p {
+
+.single-speaker p {
   color: #262626;
 }
-.card .box span {
-  display: inline-flex;
+.single-speaker span {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
-.card .box ul {
+.single-speaker ul {
   margin: 0;
   padding: 0;
 }
-.card .box ul li {
+.single-speaker ul li {
   list-style: none;
   float: left;
 }
-.card .box ul li a {
+.single-speaker ul li a {
   display: block;
   color: #aaa;
   margin: 0 10px;
@@ -71,7 +54,7 @@
   transition: 0.5s;
   text-align: center;
 }
-.card .box ul li:hover a {
+.single-speaker ul li:hover a {
   color: #e91e63;
   transform: rotateY(360deg);
 }
