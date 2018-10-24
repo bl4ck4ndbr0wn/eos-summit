@@ -8,7 +8,7 @@ export default function About() {
         <div class="row">
           <div class="col-lg-5 col-md-5 col-sm-12">
             <div class="about-image">
-              <img class="img-fluid" src="assets/img/bg/about.png" alt="" />
+              <img class="img-fluid" src="assets/img/epcolor.png" alt="" />
             </div>
           </div>
           {/* <!-- end col --> */}
