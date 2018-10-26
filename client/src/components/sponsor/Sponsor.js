@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Sponsor() {
   return (
-    <section id="supportsponsors" class="sponsors-section bg-gray">
+    <section id="supportsponsors" class="sponsors-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
