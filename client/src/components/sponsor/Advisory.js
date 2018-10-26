@@ -27,7 +27,7 @@ export default function Advisory() {
                 <a href="index-2.html#">
                   <img
                     class="img-fluid"
-                    src="assets/img/sponsor/2.jpg"
+                    src="assets/img/sponsor/eossys.jpg"
                     alt=""
                   />
                   <p>EOSSYS</p>
