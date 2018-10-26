@@ -177,7 +177,7 @@ Table Of Contents end
     /* 07. SPONSORS SLIDER JS */
 
     $(".sponsors-slider").owlCarousel({
-      loop: true,
+      rewind: true,
       margin: 30,
       dots: false,
       nav: false,

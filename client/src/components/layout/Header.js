@@ -47,20 +47,20 @@ export default function Header() {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#sponsors">
-                Sponsors
+              <a class="nav-link js-scroll-trigger" href="#organizingsponsors">
+                Partners
               </a>
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#media">
                 Media Partners
               </a>
-            </li>
-            <li class="nav-item">
+            </li> */}
+            {/* <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">
                 Contact
               </a>
-            </li>
+            </li> */}
             <li class="nav-item ticket-btn">
               <a class="nav-link" href="#">
                 <i class="icofont icofont-plane-ticket" /> Get Ticket

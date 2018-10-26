@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function Sponsor() {
+export default function Advisory() {
   return (
-    <section id="supportsponsors" class="sponsors-section bg-gray">
+    <section id="advisorysponsors" class="sponsors-section bg-gray">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="section-title">
-              <h3>Supporting Partners</h3>
+              <h3>Advisory Commitee</h3>
               <span />
             </div>
           </div>
@@ -17,20 +17,20 @@ export default function Sponsor() {
                 <a href="index-2.html#">
                   <img
                     class="img-fluid"
-                    src="assets/img/sponsor/eosIsrael.jpg"
+                    src="assets/img/sponsor/eosiosg.png"
                     alt=""
                   />
-                  <p>EOS Israel</p>
+                  <p>EOSIO.SG</p>
                 </a>
               </div>
               <div class="single-sponsors">
                 <a href="index-2.html#">
                   <img
                     class="img-fluid"
-                    src="assets/img/sponsor/eosblack.jpeg"
+                    src="assets/img/sponsor/2.jpg"
                     alt=""
                   />
-                  <p>EOS Black</p>
+                  <p>EOSSYS</p>
                 </a>
               </div>
             </div>

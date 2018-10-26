@@ -10,6 +10,9 @@ import Speaker from "../components/speakers/Speaker";
 import Sponsor from "../components/sponsor/Sponsor";
 import MediaPartner from "../components/partners/MediaPartner";
 import Dapp from "../components/partners/Dapp";
+import Organiser from "../components/sponsor/Organiser";
+import Advisory from "../components/sponsor/Advisory";
+import BlockProducer from "../components/sponsor/BlockProducer";
 
 class App extends Component {
   render() {
@@ -34,7 +37,11 @@ class App extends Component {
         <Agenda />
         <Speaker />
         <Dapp />
-        <MediaPartner />
+        <Organiser />
+        <Advisory />
+        <BlockProducer />
+        {/* <MediaPartner /> */}
+
         <Sponsor />
         {/* <!--MAIN SECTION END--> */}
 
