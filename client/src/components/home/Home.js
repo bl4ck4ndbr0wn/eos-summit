@@ -1,8 +1,13 @@
 import React from "react";
+import Countdown from "react-countdown-now";
 
 import "./Home.css";
 
 export default function Home() {
+  // "<h4>%d :<span>Days</span></h4>" +
+  //   //         "<h4>%H :<span>hr</span></h4>" +
+  //   //         "<h4>%M :<span>min</span></h4>" +
+  //   //         "<h4>%S <span>sec</span></h4>"
   return (
     <section
       id="home"
@@ -15,7 +20,7 @@ export default function Home() {
             <div class="home-icon">
               <i class="icofont icofont-time" />
             </div>
-            <p>December 20-29, 2017</p>
+            <p>November 30th, 2018</p>
             <div class="message-slider owl-carousel owl-theme">
               <div class="message-slider-text">
                 <h2>EOS SUMMIT</h2>
@@ -28,7 +33,7 @@ export default function Home() {
               </div>
             </div>
             <div class="home-coming-counter">
-              <div class="countdown-container" id="clock" />
+              <Countdown date="2018/11/30" renderer={renderer} />
             </div>
             <div class="home-btn-wrapper">
               <a href="index-2.html#about" class="js-scroll-trigger btn-home">
@@ -44,3 +49,36 @@ export default function Home() {
     </section>
   );
 }
+
+// Renderer callback with condition
+const renderer = ({ days, hours, minutes, seconds, completed }) => {
+  if (completed) {
+    // Render a complete state
+    return (
+      <span>
+        {days}:{hours}:{minutes}:{seconds}
+      </span>
+    );
+  } else {
+    // Render a countdown
+    return (
+      <div class="countdown-container">
+        <h4>
+          {days} :<span>Days</span>
+        </h4>
+
+        <h4>
+          {hours} :<span>hr</span>
+        </h4>
+
+        <h4>
+          {minutes} :<span>min</span>
+        </h4>
+
+        <h4>
+          {seconds} <span>sec</span>
+        </h4>
+      </div>
+    );
+  }
+};
