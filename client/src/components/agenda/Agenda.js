@@ -11,12 +11,12 @@ export default class Agenda extends Component {
               <div class="section-title">
                 <h3>Agenda</h3>
                 <span />
-                <p>
+                {/* <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                </p> */}
               </div>
             </div>
             {/* <!-- end col --> */}
@@ -30,10 +30,11 @@ export default class Agenda extends Component {
                     href="#"
                     data-target="#one"
                     data-toggle="tab"
-                    class="nav-link"
+                    class="nav-link active"
                   >
-                    <p>Dec 24, 2018</p>
-                    <span>Saturday</span>
+                    <p>Nov 30, 2018</p>
+                    <p>1pm - 11:10pm</p>
+                    <span>Session 1</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -41,10 +42,11 @@ export default class Agenda extends Component {
                     href="#"
                     data-target="#two"
                     data-toggle="tab"
-                    class="nav-link active"
+                    class="nav-link "
                   >
-                    <p>Dec 25, 2018</p>
-                    <span>Sunday</span>
+                    <p>Nov 30, 2018</p>
+                    <p>1pm - 11:10pm</p>
+                    <span>Session 2</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -54,43 +56,50 @@ export default class Agenda extends Component {
                     data-toggle="tab"
                     class="nav-link"
                   >
-                    <p>Dec 26, 2018</p>
-                    <span>Monday</span>
+                    <p>Nov 30, 2018</p>
+                    <p>1pm - 11:10pm</p>
+                    <span>Session 3</span>
                   </a>
                 </li>
               </ul>
               <div id="tabsJustifiedContent" class="tab-content">
-                <div id="one" class="tab-pane fade">
+                <div id="one" class="tab-pane active show  fade">
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Welcome & Opening</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}
                   <div class="schedule-single">
                     <div class="row">
                       <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                         <img
                           class="rounded  img-fluid"
-                          src="assets/img/speakers/person6.jpg"
+                          src="assets/img/speakers/person7.jpg"
                           alt=""
                         />
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="schedule-single-info">
-                          <h4>Reinventing Experiences to All</h4>
-                          <p>
+                          <h4>Worbli</h4>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat.
-                          </p>
+                          </p> */}
                           <span class="post-admin">
                             <a href="#">
                               <i class="icofont icofont-business-man-alt-3" />
-                              Jon Doe
+                              Mark Henry
                             </a>
                           </span>
                           <span class="post-date">
                             <i class="icofont icofont-clock-time" />
-                            20 Dec 2018
-                          </span>
-                          <span class="post-comment">
-                            <i class="icofont icofont-location-pin" />
-                            Theater Room 5
+                            40min
                           </span>
                         </div>
                       </div>
@@ -113,12 +122,12 @@ export default class Agenda extends Component {
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="schedule-single-info">
-                          <h4>Champagne Serving</h4>
-                          <p>
+                          <h4>Ono</h4>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat.
-                          </p>
+                          </p> */}
                           <span class="post-admin">
                             <a href="#">
                               <i class="icofont icofont-business-man-alt-3" />
@@ -127,11 +136,118 @@ export default class Agenda extends Component {
                           </span>
                           <span class="post-date">
                             <i class="icofont icofont-clock-time" />
-                            21 Dec 2018
+                            40min
                           </span>
-                          <span class="post-comment">
-                            <i class="icofont icofont-location-pin" />
-                            Theater Room 5
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>OracleChain</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>My Wish</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Publyto</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
                           </span>
                         </div>
                       </div>
@@ -145,34 +261,68 @@ export default class Agenda extends Component {
                   {/* <!-- end single schedule --> */}
                   <div class="schedule-single">
                     <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Incubator</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Break</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
                       <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                         <img
                           class="rounded  img-fluid"
-                          src="assets/img/speakers/person8.jpg"
+                          src="assets/img/speakers/person7.jpg"
                           alt=""
                         />
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="schedule-single-info">
-                          <h4>July Food Festival</h4>
-                          <p>
+                          <h4>If When Then</h4>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat.
-                          </p>
+                          </p> */}
                           <span class="post-admin">
                             <a href="#">
                               <i class="icofont icofont-business-man-alt-3" />
-                              Dran Group
+                              Mark Henry
                             </a>
                           </span>
                           <span class="post-date">
                             <i class="icofont icofont-clock-time" />
-                            22 Dec 2018
-                          </span>
-                          <span class="post-comment">
-                            <i class="icofont icofont-location-pin" />
-                            Theater Room 5
+                            40min
                           </span>
                         </div>
                       </div>
@@ -183,37 +333,33 @@ export default class Agenda extends Component {
                       </div>
                     </div>
                   </div>
-                  {/* <!-- end single schedule --> */}
+                  {/* <!-- end single schedule --> */}{" "}
                   <div class="schedule-single">
                     <div class="row">
                       <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                         <img
                           class="rounded  img-fluid"
-                          src="assets/img/speakers/person4.jpg"
+                          src="assets/img/speakers/person7.jpg"
                           alt=""
                         />
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="schedule-single-info">
-                          <h4>Nikkole Singing</h4>
-                          <p>
+                          <h4>Prospectors</h4>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat.
-                          </p>
+                          </p> */}
                           <span class="post-admin">
                             <a href="#">
                               <i class="icofont icofont-business-man-alt-3" />
-                              Mike Smith
+                              Mark Henry
                             </a>
                           </span>
                           <span class="post-date">
                             <i class="icofont icofont-clock-time" />
-                            23 Dec 2018
-                          </span>
-                          <span class="post-comment">
-                            <i class="icofont icofont-location-pin" />
-                            Theater Room 5
+                            40min
                           </span>
                         </div>
                       </div>
@@ -221,42 +367,211 @@ export default class Agenda extends Component {
                         <a href="##" class="schedule-btn">
                           View Details
                         </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Weripedia</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>BOAA</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Incubator</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Panel</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Break</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
                   {/* <!-- end single schedule --> */}
                 </div>
-                <div id="two" class="tab-pane active show fade">
+                <div id="two" class="tab-pane fade">
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Opening</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}
                   <div class="schedule-single">
                     <div class="row">
                       <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                         <img
                           class="rounded  img-fluid"
-                          src="assets/img/speakers/person5.jpg"
+                          src="assets/img/speakers/person7.jpg"
                           alt=""
                         />
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="schedule-single-info">
-                          <h4>Welcome & Registration</h4>
-                          <p>
+                          <h4>Bitjoy</h4>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat.
-                          </p>
+                          </p> */}
                           <span class="post-admin">
                             <a href="#">
                               <i class="icofont icofont-business-man-alt-3" />
-                              Kyle Mark
+                              Mark Henry
                             </a>
                           </span>
                           <span class="post-date">
                             <i class="icofont icofont-clock-time" />
-                            24 Dec 2018
-                          </span>
-                          <span class="post-comment">
-                            <i class="icofont icofont-location-pin" />
-                            Theater Room 5
+                            40min
                           </span>
                         </div>
                       </div>
@@ -273,31 +588,101 @@ export default class Agenda extends Component {
                       <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                         <img
                           class="rounded  img-fluid"
-                          src="assets/img/speakers/person2.jpg"
+                          src="assets/img/speakers/person7.jpg"
                           alt=""
                         />
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="schedule-single-info">
-                          <h4>How to make beautiful design ?</h4>
-                          <p>
+                          <h4>Slow Mist</h4>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat.
-                          </p>
+                          </p> */}
                           <span class="post-admin">
                             <a href="#">
                               <i class="icofont icofont-business-man-alt-3" />
-                              Stepen Bay
+                              Mark Henry
                             </a>
                           </span>
                           <span class="post-date">
                             <i class="icofont icofont-clock-time" />
-                            25 Dec 2018
+                            40min
                           </span>
-                          <span class="post-comment">
-                            <i class="icofont icofont-location-pin" />
-                            Theater Room 5
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Emanate</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Infiniverse</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
                           </span>
                         </div>
                       </div>
@@ -311,34 +696,68 @@ export default class Agenda extends Component {
                   {/* <!-- end single schedule --> */}
                   <div class="schedule-single">
                     <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Incubator</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Break</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
                       <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                         <img
                           class="rounded  img-fluid"
-                          src="assets/img/speakers/person4.jpg"
+                          src="assets/img/speakers/person7.jpg"
                           alt=""
                         />
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="schedule-single-info">
-                          <h4>How to optimize design ?</h4>
-                          <p>
+                          <h4>Bancor</h4>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat.
-                          </p>
+                          </p> */}
                           <span class="post-admin">
                             <a href="#">
                               <i class="icofont icofont-business-man-alt-3" />
-                              Maria law
+                              Mark Henry
                             </a>
                           </span>
                           <span class="post-date">
                             <i class="icofont icofont-clock-time" />
-                            26 Dec 2018
-                          </span>
-                          <span class="post-comment">
-                            <i class="icofont icofont-location-pin" />
-                            Theater Room 5
+                            40min
                           </span>
                         </div>
                       </div>
@@ -349,37 +768,33 @@ export default class Agenda extends Component {
                       </div>
                     </div>
                   </div>
-                  {/* <!-- end single schedule --> */}
+                  {/* <!-- end single schedule --> */}{" "}
                   <div class="schedule-single">
                     <div class="row">
                       <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                         <img
                           class="rounded  img-fluid"
-                          src="assets/img/speakers/person1.jpg"
+                          src="assets/img/speakers/person7.jpg"
                           alt=""
                         />
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="schedule-single-info">
-                          <h4>Introduction about event & conference</h4>
-                          <p>
+                          <h4>Uncloak</h4>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat.
-                          </p>
+                          </p> */}
                           <span class="post-admin">
                             <a href="#">
                               <i class="icofont icofont-business-man-alt-3" />
-                              Marlen Waller
+                              Mark Henry
                             </a>
                           </span>
                           <span class="post-date">
                             <i class="icofont icofont-clock-time" />
-                            27 Dec 2018
-                          </span>
-                          <span class="post-comment">
-                            <i class="icofont icofont-location-pin" />
-                            Theater Room 5
+                            40min
                           </span>
                         </div>
                       </div>
@@ -387,6 +802,206 @@ export default class Agenda extends Component {
                         <a href="##" class="schedule-btn">
                           View Details
                         </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Atticlab</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Lumeos</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Chintai</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Incubator</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Panel</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Break</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -395,34 +1010,40 @@ export default class Agenda extends Component {
                 <div id="three" class="tab-pane fade">
                   <div class="schedule-single">
                     <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Opening</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}
+                  <div class="schedule-single">
+                    <div class="row">
                       <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                         <img
                           class="rounded  img-fluid"
-                          src="assets/img/speakers/person2.jpg"
+                          src="assets/img/speakers/person7.jpg"
                           alt=""
                         />
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="schedule-single-info">
-                          <h4>Halloween Festival</h4>
-                          <p>
+                          <h4>Carmel</h4>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat.
-                          </p>
+                          </p> */}
                           <span class="post-admin">
                             <a href="#">
                               <i class="icofont icofont-business-man-alt-3" />
-                              Mhala Deen
+                              Mark Henry
                             </a>
                           </span>
                           <span class="post-date">
                             <i class="icofont icofont-clock-time" />
-                            21 Dec 2018
-                          </span>
-                          <span class="post-comment">
-                            <i class="icofont icofont-location-pin" />
-                            Theater Room 5
+                            40min
                           </span>
                         </div>
                       </div>
@@ -439,31 +1060,101 @@ export default class Agenda extends Component {
                       <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                         <img
                           class="rounded  img-fluid"
-                          src="assets/img/speakers/person3.jpg"
+                          src="assets/img/speakers/person7.jpg"
                           alt=""
                         />
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="schedule-single-info">
-                          <h4>Menu Serving</h4>
-                          <p>
+                          <h4>EOS Bootcamp</h4>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat.
-                          </p>
+                          </p> */}
                           <span class="post-admin">
                             <a href="#">
                               <i class="icofont icofont-business-man-alt-3" />
-                              Hory Moon
+                              Mark Henry
                             </a>
                           </span>
                           <span class="post-date">
                             <i class="icofont icofont-clock-time" />
-                            22 Dec 2018
+                            40min
                           </span>
-                          <span class="post-comment">
-                            <i class="icofont icofont-location-pin" />
-                            Theater Room 5
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Katalyo</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Europechain</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
                           </span>
                         </div>
                       </div>
@@ -477,75 +1168,68 @@ export default class Agenda extends Component {
                   {/* <!-- end single schedule --> */}
                   <div class="schedule-single">
                     <div class="row">
-                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                        <img
-                          class="rounded  img-fluid"
-                          src="assets/img/speakers/person1.jpg"
-                          alt=""
-                        />
-                      </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="schedule-single-info">
-                          <h4>Fireworks</h4>
-                          <p>
+                          <h4>Incubator</h4>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat.
-                          </p>
-                          <span class="post-admin">
-                            <a href="#">
-                              <i class="icofont icofont-business-man-alt-3" />
-                              Sat Rolens
-                            </a>
-                          </span>
+                          </p> */}
                           <span class="post-date">
                             <i class="icofont icofont-clock-time" />
-                            20 Dec 2018
-                          </span>
-                          <span class="post-comment">
-                            <i class="icofont icofont-location-pin" />
-                            Theater Room 5
+                            40min
                           </span>
                         </div>
-                      </div>
-                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                        <a href="##" class="schedule-btn">
-                          View Details
-                        </a>
                       </div>
                     </div>
                   </div>
                   {/* <!-- end single schedule --> */}
                   <div class="schedule-single">
                     <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Break</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
                       <div class="col-lg-3 col-md-3 col-sm-12 col-12">
                         <img
                           class="rounded  img-fluid"
-                          src="assets/img/speakers/person4.jpg"
+                          src="assets/img/speakers/person7.jpg"
                           alt=""
                         />
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="schedule-single-info">
-                          <h4>Introduction about event & conference</h4>
-                          <p>
+                          <h4>Chestnut</h4>
+                          {/* <p>
                             Lorem ipsum dolor sit amet, consectetuer adipiscing
                             elit, sed diam nonummy nibh euismod tincidunt ut
                             laoreet dolore magna aliquam erat volutpat.
-                          </p>
+                          </p> */}
                           <span class="post-admin">
                             <a href="#">
                               <i class="icofont icofont-business-man-alt-3" />
-                              Sharleen Charles
+                              Mark Henry
                             </a>
                           </span>
                           <span class="post-date">
                             <i class="icofont icofont-clock-time" />
-                            23 Dec 2018
-                          </span>
-                          <span class="post-comment">
-                            <i class="icofont icofont-location-pin" />
-                            Theater Room 5
+                            40min
                           </span>
                         </div>
                       </div>
@@ -556,7 +1240,181 @@ export default class Agenda extends Component {
                       </div>
                     </div>
                   </div>
-                  {/* <!-- end single schedule --> */}
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>IDPass</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>N/A</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>N/A</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Incubator</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
+                  <div class="schedule-single">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <img
+                          class="rounded  img-fluid"
+                          src="assets/img/speakers/person7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="schedule-single-info">
+                          <h4>Panel</h4>
+                          {/* <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit, sed diam nonummy nibh euismod tincidunt ut
+                            laoreet dolore magna aliquam erat volutpat.
+                          </p> */}
+                          <span class="post-admin">
+                            <a href="#">
+                              <i class="icofont icofont-business-man-alt-3" />
+                              Mark Henry
+                            </a>
+                          </span>
+                          <span class="post-date">
+                            <i class="icofont icofont-clock-time" />
+                            40min
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+                        <a href="##" class="schedule-btn">
+                          View Details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  {/* <!-- end single schedule --> */}{" "}
                 </div>
               </div>
             </div>
