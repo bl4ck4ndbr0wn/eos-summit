@@ -2,30 +2,49 @@ import React from "react";
 
 export default function Boucher() {
   return (
-    <section
-      id="boucher"
-      class="section-padding overlay section-back-image"
-      style={{ backgroundImage: "url(assets/img/bg/promo-bg-2.jpg)" }}
-    >
+    <div class="counter-up-area pad100 bg-counter parallax">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-            <div class="boucher-promo">
-              <h3>Are you ready to attend? Get your Ticket today for free!</h3>
-              <p>Everyone is waiting to see the next big DAPP.</p>
-              <div class="boucher-order">
-                <a href="#" class="js-scroll-trigger btn-order">
-                  <i class="icofont icofont-cart-alt" />
-                  REGISTER
-                </a>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+            <div class="single-counter xs-mb40">
+              <div class="count-content">
+                <span class="count">80</span>
+                <p>Dapp Companies</p>
               </div>
             </div>
           </div>
-          {/* <!-- end col --> */}
+          {/* <!-- /col end--> */}
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+            <div class="single-counter xs-mb40">
+              <div class="count-content">
+                <span class="count">120</span>
+                <p>Programs</p>
+              </div>
+            </div>
+          </div>
+          {/* <!-- /col end--> */}
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-3">
+            <div class="single-counter xs-mb40">
+              <div class="count-content">
+                <span class="count">29</span>
+                <p>Speakers</p>
+              </div>
+            </div>
+          </div>
+          {/* <!-- /col end--> */}
+          <div class="col-xl-3 col-lg-3 d-md-none d-lg-block col-sm-3">
+            <div class="single-counter">
+              <div class="count-content">
+                <span class="count">30</span>
+                <p>Sponsors</p>
+              </div>
+            </div>
+          </div>
+          {/* <!-- /col end--> */}
         </div>
-        {/* <!--- END ROW --> */}
+        {/* <!-- /row end--> */}
       </div>
-      {/* <!--- END CONTAINER --> */}
-    </section>
+      {/* <!-- /container end--> */}
+    </div>
   );
 }

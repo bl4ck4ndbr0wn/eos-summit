@@ -2,13 +2,25 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer class="footer-top">
+    <div class="footer-area bg-footer parallax ptb">
       <div class="container">
-        <div class="row ml-auto">
-          <div class="col-lg-6 col-md-12 col-sm-12 col-12 footer-widget">
-            <div class="text-widget">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="am">
+              <div class="f-logo">
+                <img
+                  src="assets/img/epwhite.png"
+                  alt=""
+                  style={{ height: "198px" }}
+                />
+              </div>
+              <div class="border-right" />
+            </div>
+          </div>
+          {/* <!-- /col end--> */}
+          <div class="col-lg-6 offset-1">
+            <div class="f-content">
               <p>
-                <span>M</span>
                 Months after its official Mainnet launch, EOS continued to
                 receive support from its growing community. Everyone is waiting
                 to see the progress of this much-hyped blockchain network.
@@ -18,67 +30,53 @@ export default function Footer() {
                 <br />
                 Everyone is waiting to see the next big DAPP
               </p>
-              <div class="footer-social">
+              <div class="sub-btn">
+                <input type="text" placeholder="Your email address " />
+                <button type="submit">Subscribe</button>
+              </div>
+              <div class="f-social">
                 <ul>
                   <li>
                     <a href="#">
-                      <i class="icofont icofont-social-facebook" />
+                      <i class="fa fa-facebook" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="icofont icofont-social-twitter" />
+                      <i class="fa fa-twitter" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="icofont icofont-social-youtube" />
+                      <i class="fa fa-linkedin" />
                     </a>
                   </li>
                   <li>
                     <a href="#">
-                      <i class="icofont icofont-social-linkedin" />
+                      <i class="fa fa-camera" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-pinterest" />
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          {/* <!-- end col --> */}
-          <div class="col-lg-2 col-md-6 col-sm-6 col-12 footer-widget">
-            <div class="footer-menu">
-              <ul>
-                <li>
-                  {" "}
-                  <a href="#about">About</a>
-                </li>
-                <li>
-                  {" "}
-                  <a href="#speakers">Speakers</a>
-                </li>
-                <li>
-                  {" "}
-                  <a href="#dapp">Dapp Companies</a>
-                </li>
-                <li>
-                  {" "}
-                  <a href="#organizingsponsors">Partners</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          {/* <!-- end col --> */}
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 footer-widget">
-            <div class="copyright text-right">
-              <p>&copy; 2018 EOS Summit | All Rights Reserved</p>
-            </div>
-            {/* <!--- END FOOTER COPYRIGHT --> */}
-          </div>
-          {/* <!-- end col --> */}
+          {/* <!-- /col end--> */}
         </div>
-        {/* <!--- END ROW --> */}
+        {/* <!-- /row end--> */}
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="copyright">
+              <p>©2018. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      {/* <!--- END CONTAINER --> */}
-    </footer>
+      {/* <!-- /container end--> */}
+    </div>
   );
 }

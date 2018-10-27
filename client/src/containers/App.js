@@ -18,36 +18,23 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div class="preloader">
-          <div class="loadscreen">
-            <div class="loadscreen-in">
-              <img class="img-fluid" src="assets/img/epcolor.png" alt="" />
-            </div>
-          </div>
+        <div class="loader">
+          <div class="loader--dot" />
+          <div class="loader--dot" />
+          <div class="loader--dot" />
+          <div class="loader--dot" />
+          <div class="loader--dot" />
+          <div class="loader--dot" />
+          <div class="loader--text" />
         </div>
-
-        {/* <!--HEADER START--> */}
-        <Header />
-        {/* <!--HEADER END--> */}
-
-        {/* <!--MAIN SECTION START--> */}
-        <Home />
-        <About />
-        <Boucher />
-        <Agenda />
-        <Speaker />
-        <Dapp />
-        <Organiser />
-        <Advisory />
-        <BlockProducer />
-        {/* <MediaPartner /> */}
-
-        <Sponsor />
-        {/* <!--MAIN SECTION END--> */}
-
-        {/* <!--FOOTER START--> */}
-        <Footer />
-        {/* <!--FOOTER END--> */}
+        <div class="main-container">
+          <Header />
+          <Home />
+          <About />
+          <Boucher />
+          <Sponsor />
+          <Footer />
+        </div>
       </div>
     );
   }
