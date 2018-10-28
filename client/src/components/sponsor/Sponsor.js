@@ -24,7 +24,8 @@ export default function Sponsor() {
                   <img src="assets/img/sponsor/eosIsrael.jpg" alt="" />
                 </a>
               </div>
-              <div class="boder" />
+            </div>
+            <div class="col-lg-12">
               <div class="single-sponsers">
                 <a href="#">
                   <img src="assets/img/sponsor/eosblack.jpeg" alt="" />
@@ -32,14 +33,6 @@ export default function Sponsor() {
               </div>
             </div>
           </div>
-          <div class="col-lg-12">
-            <div class="primary-btn text-center">
-              <a href="#" class="btn-primary">
-                Become Sponsor
-              </a>
-            </div>
-          </div>
-          {/* <!-- /col end--> */}
         </div>
         {/* <!-- /row end--> */}
       </div>

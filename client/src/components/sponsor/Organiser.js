@@ -2,63 +2,52 @@ import React from "react";
 
 export default function Organiser() {
   return (
-    <section id="organizingsponsors" class="sponsors-section bg-gray">
+    <div class="our-sponsers-area-tow pad100 bg-color">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <div class="section-title">
-              <h3>Co-Organizers</h3>
-              <span />
+          <div class="col-lg-12">
+            <div class="section-title text-center">
+              <div class="title-text mb50 xs-mb40">
+                <h2>Co-Organizers</h2>
+              </div>
             </div>
           </div>
-          <div class="col-lg-12 text-center">
-            <div class="sponsors-slider owl-carousel owl-theme">
-              <div class="single-sponsors">
-                <a href="index-2.html#">
-                  <img
-                    class="img-fluid"
-                    src="assets/img/sponsor/eosgravity.jpg"
-                    alt=""
-                  />
-                  <p>EOS Gravity</p>
+          {/* <!-- /col end--> */}
+        </div>
+        {/* <!-- /row end--> */}
+        <div class="row">
+          <div class="sponsers-active owl-carousel owl-theme">
+            <div class="col-lg-12">
+              <div class="single-sponsers">
+                <a href="#">
+                  <img src="assets/img/sponsor/eosgravity.jpg" alt="" />
                 </a>
               </div>
-              <div class="single-sponsors">
-                <a href="index-2.html#">
-                  <img
-                    class="img-fluid"
-                    src="assets/img/sponsor/iwad.jpg"
-                    alt=""
-                  />
-                  <p>Investing with a difference (IWAD)</p>
+              <div class="boder" />
+              <div class="single-sponsers">
+                <a href="#">
+                  <img src="assets/img/sponsor/iwad.jpg" alt="" />
                 </a>
               </div>
-              <div class="single-sponsors">
-                <a href="index-2.html#">
-                  <img
-                    class="img-fluid"
-                    src="assets/img/sponsor/EOSNation.png"
-                    alt=""
-                  />
-                  <p>EOS Nation</p>
+            </div>
+            <div class="col-lg-12">
+              <div class="single-sponsers">
+                <a href="#">
+                  <img src="assets/img/sponsor/EOSNation.png" alt="" />
                 </a>
               </div>
-              <div class="single-sponsors">
-                <a href="index-2.html#">
-                  <img
-                    class="img-fluid"
-                    src="assets/img/sponsor/eosnairobi.jpg"
-                    alt=""
-                  />
-                  <p>EOS Nairobi</p>
+              <div class="boder" />
+              <div class="single-sponsers">
+                <a href="#">
+                  <img src="assets/img/sponsor/eosnairobi.jpg" alt="" />
                 </a>
               </div>
             </div>
           </div>
         </div>
-        {/* <!--- END ROW --> */}
+        {/* <!-- /row end--> */}
       </div>
-      {/* <!--- END CONTAINER --> */}
-    </section>
+      {/* <!-- /container end--> */}
+    </div>
   );
 }

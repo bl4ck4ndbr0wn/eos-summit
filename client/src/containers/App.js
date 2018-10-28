@@ -32,6 +32,9 @@ class App extends Component {
           <Home />
           <About />
           <Boucher />
+          <Organiser />
+          <BlockProducer />
+          <Advisory />
           <Sponsor />
           <Footer />
         </div>

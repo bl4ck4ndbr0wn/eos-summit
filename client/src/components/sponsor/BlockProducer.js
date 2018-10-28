@@ -2,65 +2,52 @@ import React from "react";
 
 export default function BlockProducer() {
   return (
-    <section id="bpsponsors" class="sponsors-section bg-gray">
+    <div class="our-sponsers-area-tow pad100 bg-color">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
-            <div class="section-title">
-              <h3>Supporting Block Producers</h3>
-              <span />
+          <div class="col-lg-12">
+            <div class="section-title text-center">
+              <div class="title-text mb50 xs-mb40">
+                <h2>Supporting Block Producers</h2>
+              </div>
             </div>
           </div>
-          <div class="col-lg-12 text-center">
-            <div class="sponsors-slider owl-carousel owl-theme">
-              <div class="single-sponsors">
-                <a href="index-2.html#">
-                  <img
-                    class="img-fluid"
-                    src="assets/img/sponsor/eosph.png"
-                    alt=""
-                  />
-                  <p>EOS PH</p>
+          {/* <!-- /col end--> */}
+        </div>
+        {/* <!-- /row end--> */}
+        <div class="row">
+          <div class="sponsers-active owl-carousel owl-theme">
+            <div class="col-lg-12">
+              <div class="single-sponsers">
+                <a href="#">
+                  <img src="assets/img/sponsor/eosph.png" alt="" />
                 </a>
               </div>
-              <div class="single-sponsors">
-                <a href="index-2.html#">
-                  <img
-                    class="img-fluid"
-                    src="assets/img/sponsor/eosrio.png"
-                    alt=""
-                  />
-                  <p>EOS RIO</p>
+              <div class="boder" />
+              <div class="single-sponsers">
+                <a href="#">
+                  <img src="assets/img/sponsor/eosrio.png" alt="" />
                 </a>
               </div>
-              <div class="single-sponsors">
-                <a href="index-2.html#">
-                  <img
-                    class="img-fluid"
-                    src="assets/img/sponsor/eossweden.png"
-                    alt=""
-                    style={{ backgroundColor: "black" }}
-                  />
-                  <p>EOSSweden - TBC</p>
+            </div>
+            <div class="col-lg-12">
+              <div class="single-sponsers">
+                <a href="#">
+                  <img src="assets/img/sponsor/eossweden.png" alt="" />
                 </a>
               </div>
-              <div class="single-sponsors">
-                <a href="index-2.html#">
-                  <img
-                    class="img-fluid"
-                    src="assets/img/sponsor/eoscanada.svg"
-                    alt=""
-                    style={{ backgroundColor: "black" }}
-                  />
-                  <p>EOS Canada</p>
+              <div class="boder" />
+              <div class="single-sponsers">
+                <a href="#">
+                  <img src="assets/img/sponsor/eoscanada.svg" alt="" />
                 </a>
               </div>
             </div>
           </div>
         </div>
-        {/* <!--- END ROW --> */}
+        {/* <!-- /row end--> */}
       </div>
-      {/* <!--- END CONTAINER --> */}
-    </section>
+      {/* <!-- /container end--> */}
+    </div>
   );
 }
