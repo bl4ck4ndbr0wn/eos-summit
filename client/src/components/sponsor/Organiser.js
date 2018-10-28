@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-
-export default class Organiser extends Component {
+import PropTypes from "prop-types";
+class Organiser extends Component {
   render() {
-    console.log(this.props.coorganizes);
     const organizerList = this.props.coorganizes.map(image => (
       <div className="single-sponsers" key={image._id}>
         <a href="#">
@@ -38,3 +37,8 @@ export default class Organiser extends Component {
     );
   }
 }
+Organiser.propTypes = {
+  coorganizes: PropTypes.func.isRequired
+};
+
+export default Organiser;

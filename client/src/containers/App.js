@@ -36,11 +36,11 @@ class App extends Component {
   render() {
     const { companyList } = this.state;
 
-    const coorganizes = companyList.filter(e => e.session === "CO");
-    const blockproducer = companyList.filter(e => e.session === "BP");
-    const advisorycommitee = companyList.filter(e => e.session === "AC");
-    const sponsors = companyList.filter(e => e.session === "OS");
-    console.log(companyList);
+    const coorganizes = companyList.filter(e => e.category === "CO");
+    const blockproducer = companyList.filter(e => e.category === "BP");
+    const advisorycommitee = companyList.filter(e => e.category === "AC");
+    const sponsors = companyList.filter(e => e.category === "OS");
+
     return (
       <div>
         <div className="loader">

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-export default class Advisory extends Component {
+class Advisory extends Component {
   render() {
     const advisoryList = this.props.advisorycommitee.map(image => (
       <div className="single-sponsers">
@@ -39,3 +40,9 @@ export default class Advisory extends Component {
     );
   }
 }
+
+Advisory.propTypes = {
+  advisorycommitee: PropTypes.func.isRequired
+};
+
+export default Advisory;

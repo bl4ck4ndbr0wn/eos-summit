@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-export default class BlockProducer extends Component {
+class BlockProducer extends Component {
   render() {
     const bpList = this.props.blockproducer.map(image => (
       <div className="single-sponsers">
@@ -37,3 +38,9 @@ export default class BlockProducer extends Component {
     );
   }
 }
+
+BlockProducer.propTypes = {
+  blockproducer: PropTypes.func.isRequired
+};
+
+export default BlockProducer;

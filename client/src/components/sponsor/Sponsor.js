@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-export default class Sponsor extends Component {
+class Sponsor extends Component {
   render() {
     const sponsorList = this.props.sponsors.map(image => (
       <div className="single-sponsers">
@@ -38,3 +39,9 @@ export default class Sponsor extends Component {
     );
   }
 }
+
+Sponsor.propTypes = {
+  sponsors: PropTypes.func.isRequired
+};
+
+export default Sponsor;
