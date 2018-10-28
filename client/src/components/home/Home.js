@@ -4,13 +4,13 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <div class="hero-banner-area home-2 hero-bg-2 parallax no-attm">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="banner-content">
-              <div class="upcoming">
-                <span class="is-countdown"> </span>
+    <div className="hero-banner-area home-2 hero-bg-2 parallax no-attm">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="banner-content">
+              <div className="upcoming">
+                <span className="is-countdown"> </span>
                 <div data-countdown="2018/11/30" />
               </div>
               <h3>EOS Dapp Summit Conferences</h3>

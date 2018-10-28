@@ -4,11 +4,11 @@ import "./Speaker.css";
 export default class Speaker extends Component {
   render() {
     return (
-      <section id="speakers" class="section-padding bg-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <div class="section-title">
+      <section id="speakers" className="section-padding bg-gray">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <div className="section-title">
                 <h3>Speakers</h3>
                 <span />
                 {/* <p>
@@ -20,16 +20,16 @@ export default class Speaker extends Component {
               </div>
             </div>
             {/* <!-- end col --> */}
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div class="single-speaker">
-                <div class="single-speaker-header text-center">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+              <div className="single-speaker">
+                <div className="single-speaker-header text-center">
                   <img
-                    class="rounded-circle  img-fluid"
+                    className="rounded-circle  img-fluid"
                     src="assets/img/speakers/person7.jpg"
                     alt=""
                   />
                 </div>
-                <h2 class="text-center">
+                <h2 className="text-center">
                   Alpha Nganga
                   <br />
                   <span>Web Developer</span>
@@ -43,27 +43,27 @@ export default class Speaker extends Component {
                   <ul>
                     <li>
                       <a href="#">
-                        <i class="fa fa-facebook" aria-hidden="true" />
+                        <i className="fa fa-facebook" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-twitter" aria-hidden="true" />
+                        <i className="fa fa-twitter" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-google-plus" aria-hidden="true" />
+                        <i className="fa fa-google-plus" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-linkedin" aria-hidden="true" />
+                        <i className="fa fa-linkedin" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-instagram" aria-hidden="true" />
+                        <i className="fa fa-instagram" aria-hidden="true" />
                       </a>
                     </li>
                   </ul>
@@ -71,16 +71,16 @@ export default class Speaker extends Component {
               </div>
             </div>
             {/* <!-- end col --> */}
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div class="single-speaker">
-                <div class="single-speaker-header text-center">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+              <div className="single-speaker">
+                <div className="single-speaker-header text-center">
                   <img
-                    class="rounded-circle  img-fluid"
+                    className="rounded-circle  img-fluid"
                     src="assets/img/speakers/person7.jpg"
                     alt=""
                   />
                 </div>
-                <h2 class="text-center">
+                <h2 className="text-center">
                   Alpha Nganga
                   <br />
                   <span>Web Developer</span>
@@ -94,27 +94,27 @@ export default class Speaker extends Component {
                   <ul>
                     <li>
                       <a href="#">
-                        <i class="fa fa-facebook" aria-hidden="true" />
+                        <i className="fa fa-facebook" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-twitter" aria-hidden="true" />
+                        <i className="fa fa-twitter" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-google-plus" aria-hidden="true" />
+                        <i className="fa fa-google-plus" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-linkedin" aria-hidden="true" />
+                        <i className="fa fa-linkedin" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-instagram" aria-hidden="true" />
+                        <i className="fa fa-instagram" aria-hidden="true" />
                       </a>
                     </li>
                   </ul>
@@ -122,16 +122,16 @@ export default class Speaker extends Component {
               </div>
             </div>
             {/* <!-- end col --> */}
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div class="single-speaker">
-                <div class="single-speaker-header text-center">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+              <div className="single-speaker">
+                <div className="single-speaker-header text-center">
                   <img
-                    class="rounded-circle  img-fluid"
+                    className="rounded-circle  img-fluid"
                     src="assets/img/speakers/person7.jpg"
                     alt=""
                   />
                 </div>
-                <h2 class="text-center">
+                <h2 className="text-center">
                   Alpha Nganga
                   <br />
                   <span>Web Developer</span>
@@ -145,27 +145,27 @@ export default class Speaker extends Component {
                   <ul>
                     <li>
                       <a href="#">
-                        <i class="fa fa-facebook" aria-hidden="true" />
+                        <i className="fa fa-facebook" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-twitter" aria-hidden="true" />
+                        <i className="fa fa-twitter" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-google-plus" aria-hidden="true" />
+                        <i className="fa fa-google-plus" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-linkedin" aria-hidden="true" />
+                        <i className="fa fa-linkedin" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-instagram" aria-hidden="true" />
+                        <i className="fa fa-instagram" aria-hidden="true" />
                       </a>
                     </li>
                   </ul>
@@ -173,16 +173,16 @@ export default class Speaker extends Component {
               </div>
             </div>
             {/* <!-- end col --> */}
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
-              <div class="single-speaker">
-                <div class="single-speaker-header text-center">
+            <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+              <div className="single-speaker">
+                <div className="single-speaker-header text-center">
                   <img
-                    class="rounded-circle  img-fluid"
+                    className="rounded-circle  img-fluid"
                     src="assets/img/speakers/person7.jpg"
                     alt=""
                   />
                 </div>
-                <h2 class="text-center">
+                <h2 className="text-center">
                   Alpha Nganga
                   <br />
                   <span>Web Developer</span>
@@ -196,27 +196,27 @@ export default class Speaker extends Component {
                   <ul>
                     <li>
                       <a href="#">
-                        <i class="fa fa-facebook" aria-hidden="true" />
+                        <i className="fa fa-facebook" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-twitter" aria-hidden="true" />
+                        <i className="fa fa-twitter" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-google-plus" aria-hidden="true" />
+                        <i className="fa fa-google-plus" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-linkedin" aria-hidden="true" />
+                        <i className="fa fa-linkedin" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-instagram" aria-hidden="true" />
+                        <i className="fa fa-instagram" aria-hidden="true" />
                       </a>
                     </li>
                   </ul>

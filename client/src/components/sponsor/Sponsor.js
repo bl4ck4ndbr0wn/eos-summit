@@ -1,42 +1,40 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default function Sponsor() {
-  return (
-    <div class="our-sponsers-area-tow pad100 bg-color">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title text-center">
-              <div class="title-text mb50 xs-mb40">
-                <h2>Our Sponsers</h2>
-                <p>Supporting Partners</p>
-              </div>
-            </div>
-          </div>
-          {/* <!-- /col end--> */}
-        </div>
-        {/* <!-- /row end--> */}
-        <div class="row">
-          <div class="sponsers-active owl-carousel owl-theme">
-            <div class="col-lg-12">
-              <div class="single-sponsers">
-                <a href="#">
-                  <img src="assets/img/sponsor/eosIsrael.jpg" alt="" />
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="single-sponsers">
-                <a href="#">
-                  <img src="assets/img/sponsor/eosblack.jpeg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* <!-- /row end--> */}
+export default class Sponsor extends Component {
+  render() {
+    const sponsorList = this.props.sponsors.map(image => (
+      <div className="single-sponsers">
+        <a href="#">
+          <img
+            src={image.image}
+            alt=""
+            style={{ width: "139px", height: "70px" }}
+          />
+        </a>
       </div>
-      {/* <!-- /container end--> */}
-    </div>
-  );
+    ));
+    return (
+      <div className="our-sponsers-area-tow pad100 bg-color">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title text-center">
+                <div className="title-text mb50 xs-mb40">
+                  <h2>Our Sponsers</h2>
+                  <p>Supporting Partners</p>
+                </div>
+              </div>
+            </div>
+            {/* <!-- /col end--> */}
+          </div>
+          {/* <!-- /row end--> */}
+          <div className="row">
+            <div className="sponsers-active owl-carousel owl-theme">
+              <div className="col-lg-12">{sponsorList}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }

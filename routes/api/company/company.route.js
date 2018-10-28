@@ -39,7 +39,7 @@ const upload = multer({ storage: storage });
 router.get("/", async (req, res) => {
   try {
     const confirmedCompanies = await Company.find({
-      agendaConfirmed: true
+      companyConfirmed: true
     }).exec();
     res.send(confirmedCompanies);
   } catch (err) {
@@ -50,8 +50,9 @@ router.get("/", async (req, res) => {
 router.post(
   "/",
   passport.authenticate("jwt", { session: false }),
+  upload.any("fileupload"),
   (req, res) => {
-    const { errors, isValid } = validateCompanyInput(req.body);
+    const { errors, isValid } = validateCompanyInput(req);
 
     // Check Validation
     if (!isValid) {
@@ -69,7 +70,7 @@ router.post(
     });
 
     if (req.body.link) companyFields.link = req.body.link;
-    companyFields.agendaConfirmed = true;
+    companyFields.companyConfirmed = true;
 
     Company.findById(req.body.id)
       .then(company => {

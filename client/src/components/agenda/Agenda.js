@@ -28,33 +28,33 @@ export default class Agenda extends Component {
     const session_two = agendaList.filter(e => e.session === "two");
     const session_three = agendaList.filter(e => e.session === "three");
     const sessionOne = session_one.map(event => (
-      <tr class="inner-box">
+      <tr className="inner-box" key={event._id}>
         <th scope="row">
-          <div class="event-date">
+          <div className="event-date">
             <span>{event.day}</span>
             <p>{event.month}</p>
           </div>
         </th>
         <td>
-          <div class="event-img">
+          <div className="event-img">
             <img src={event.speakerImage} alt="" />
           </div>
         </td>
         <td>
-          <div class="event-wrap">
+          <div className="event-wrap">
             <h3>
               <a href="speakers-single.html">{event.title}</a>
             </h3>
-            <div class="meta">
+            <div className="meta">
               {event.speaker !== "" ? (
-                <div class="organizers">
+                <div className="organizers">
                   <a href="#">{event.speaker}</a>
                 </div>
               ) : (
                 ""
               )}
 
-              <div class="time">
+              <div className="time">
                 <span>{event.time}</span>
               </div>
             </div>
@@ -62,40 +62,40 @@ export default class Agenda extends Component {
         </td>
         <td>
           <a href={event.link} style={{ fontSize: "40px", color: "darkblue" }}>
-            <i class="fa fa-play-circle" />
+            <i className="fa fa-play-circle" />
           </a>
         </td>
       </tr>
     ));
 
     const sessionTwo = session_two.map(event => (
-      <tr class="inner-box">
+      <tr className="inner-box" key={event._id}>
         <th scope="row">
-          <div class="event-date">
+          <div className="event-date">
             <span>{event.day}</span>
             <p>{event.month}</p>
           </div>
         </th>
         <td>
-          <div class="event-img">
+          <div className="event-img">
             <img src={event.speakerImage} alt="" />
           </div>
         </td>
         <td>
-          <div class="event-wrap">
+          <div className="event-wrap">
             <h3>
               <a href="speakers-single.html">{event.title}</a>
             </h3>
-            <div class="meta">
+            <div className="meta">
               {event.speaker !== "" ? (
-                <div class="organizers">
+                <div className="organizers">
                   <a href="#">{event.speaker}</a>
                 </div>
               ) : (
                 ""
               )}
 
-              <div class="time">
+              <div className="time">
                 <span>{event.time}</span>
               </div>
             </div>
@@ -103,39 +103,39 @@ export default class Agenda extends Component {
         </td>
         <td>
           <a href={event.link} style={{ fontSize: "40px", color: "darkblue" }}>
-            <i class="fa fa-play-circle" />
+            <i className="fa fa-play-circle" />
           </a>
         </td>
       </tr>
     ));
     const sessionThree = session_three.map(event => (
-      <tr class="inner-box">
+      <tr className="inner-box" key={event._id}>
         <th scope="row">
-          <div class="event-date">
+          <div className="event-date">
             <span>{event.day}</span>
             <p>{event.month}</p>
           </div>
         </th>
         <td>
-          <div class="event-img">
+          <div className="event-img">
             <img src={event.speakerImage} alt="" />
           </div>
         </td>
         <td>
-          <div class="event-wrap">
+          <div className="event-wrap">
             <h3>
               <a href="speakers-single.html">{event.title}</a>
             </h3>
-            <div class="meta">
+            <div className="meta">
               {event.speaker !== "" ? (
-                <div class="organizers">
+                <div className="organizers">
                   <a href="#">{event.speaker}</a>
                 </div>
               ) : (
                 ""
               )}
 
-              <div class="time">
+              <div className="time">
                 <span>{event.time}</span>
               </div>
             </div>
@@ -143,18 +143,18 @@ export default class Agenda extends Component {
         </td>
         <td>
           <a href={event.link} style={{ fontSize: "40px", color: "darkblue" }}>
-            <i class="fa fa-play-circle" />
+            <i className="fa fa-play-circle" />
           </a>
         </td>
       </tr>
     ));
     return (
-      <div class="event-schedule-area-two bg-color pad100">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="section-title text-center">
-                <div class="title-text">
+      <div className="event-schedule-area-two bg-color pad100">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="section-title text-center">
+                <div className="title-text">
                   <h2>Event Schedule</h2>
                 </div>
               </div>
@@ -162,12 +162,12 @@ export default class Agenda extends Component {
             {/* <!-- /.col end--> */}
           </div>
           {/* <!-- row end--> */}
-          <div class="row">
-            <div class="col-lg-12">
-              <ul class="nav custom-tab" id="myTab" role="tablist">
-                <li class="nav-item">
+          <div className="row">
+            <div className="col-lg-12">
+              <ul className="nav custom-tab" id="myTab" role="tablist">
+                <li className="nav-item">
                   <a
-                    class="nav-link active"
+                    className="nav-link active"
                     id="home-taThursday"
                     data-toggle="tab"
                     href="#home"
@@ -178,9 +178,9 @@ export default class Agenda extends Component {
                     Session 1
                   </a>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <a
-                    class="nav-link"
+                    className="nav-link"
                     id="profile-tab"
                     data-toggle="tab"
                     href="#profile"
@@ -191,9 +191,9 @@ export default class Agenda extends Component {
                     Session 2
                   </a>
                 </li>
-                <li class="nav-item">
+                <li className="nav-item">
                   <a
-                    class="nav-link"
+                    className="nav-link"
                     id="contact-tab"
                     data-toggle="tab"
                     href="#contact"
@@ -205,22 +205,22 @@ export default class Agenda extends Component {
                   </a>
                 </li>
               </ul>
-              <div class="tab-content" id="myTabContent">
+              <div className="tab-content" id="myTabContent">
                 <div
-                  class="tab-pane fade show active"
+                  className="tab-pane fade show active"
                   id="home"
                   role="tabpanel"
                 >
-                  <div class="table-responsive">
-                    <table class="table">
+                  <div className="table-responsive">
+                    <table className="table">
                       <thead>
                         <tr>
-                          <th class="text-center" scope="col">
+                          <th className="text-center" scope="col">
                             Date
                           </th>
                           <th scope="col">Speakers</th>
                           <th scope="col">Session</th>
-                          <th class="text-center" scope="col">
+                          <th className="text-center" scope="col">
                             -
                           </th>
                         </tr>
@@ -230,21 +230,21 @@ export default class Agenda extends Component {
                   </div>
                 </div>
                 <div
-                  class="tab-pane fade"
+                  className="tab-pane fade"
                   id="profile"
                   role="tabpanel"
                   aria-labelledby="profile-tab"
                 >
-                  <div class="table-responsive">
-                    <table class="table">
+                  <div className="table-responsive">
+                    <table className="table">
                       <thead>
                         <tr>
-                          <th class="text-center" scope="col">
+                          <th className="text-center" scope="col">
                             Date
                           </th>
                           <th scope="col">Speakers</th>
                           <th scope="col">Session</th>
-                          <th class="text-center" scope="col">
+                          <th className="text-center" scope="col">
                             -
                           </th>
                         </tr>
@@ -254,21 +254,21 @@ export default class Agenda extends Component {
                   </div>
                 </div>
                 <div
-                  class="tab-pane fade"
+                  className="tab-pane fade"
                   id="contact"
                   role="tabpanel"
                   aria-labelledby="contact-tab"
                 >
-                  <div class="table-responsive">
-                    <table class="table">
+                  <div className="table-responsive">
+                    <table className="table">
                       <thead>
                         <tr>
-                          <th class="text-center" scope="col">
+                          <th className="text-center" scope="col">
                             Date
                           </th>
                           <th scope="col">Speakers</th>
                           <th scope="col">Session</th>
-                          <th class="text-center" scope="col">
+                          <th className="text-center" scope="col">
                             -
                           </th>
                         </tr>

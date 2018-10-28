@@ -29,7 +29,7 @@ class App extends Component {
   }
   // Load posts
   loadCompanies = async () => {
-    const response = await axios.get("http://localhost:5000/api/companies");
+    const response = await axios.get("http://localhost:5000/api/company");
     this.setState({ companyList: response.data.reverse() });
   };
 
@@ -40,19 +40,19 @@ class App extends Component {
     const blockproducer = companyList.filter(e => e.session === "BP");
     const advisorycommitee = companyList.filter(e => e.session === "AC");
     const sponsors = companyList.filter(e => e.session === "OS");
-
+    console.log(companyList);
     return (
       <div>
-        <div class="loader">
-          <div class="loader--dot" />
-          <div class="loader--dot" />
-          <div class="loader--dot" />
-          <div class="loader--dot" />
-          <div class="loader--dot" />
-          <div class="loader--dot" />
-          <div class="loader--text" />
+        <div className="loader">
+          <div className="loader--dot" />
+          <div className="loader--dot" />
+          <div className="loader--dot" />
+          <div className="loader--dot" />
+          <div className="loader--dot" />
+          <div className="loader--dot" />
+          <div className="loader--text" />
         </div>
-        <div class="main-container">
+        <div className="main-container">
           <Header />
           <Home />
           <About />

@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header class="header base-style-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="brand-logo">
-              <a class="eventex-brand" href="index.html">
+    <header className="header base-style-2">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-2">
+            <div className="brand-logo">
+              <a className="eventex-brand" href="index.html">
                 <img
                   src="assets/img/epblack.png"
                   alt=""
@@ -17,10 +17,10 @@ export default function Header() {
             </div>
           </div>
           {/* <!-- /col end--> */}
-          <div class="col-lg-8">
-            <nav class="navbar navbar-expand-lg">
+          <div className="col-lg-8">
+            <nav className="navbar navbar-expand-lg">
               <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
@@ -28,25 +28,28 @@ export default function Header() {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon">
-                  <i class="fa fa-bars" />
+                <span className="navbar-toggler-icon">
+                  <i className="fa fa-bars" />
                 </span>
               </button>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active ">
-                    <a class="nav-link" href="#">
+              <div
+                className="collapse navbar-collapse"
+                id="navbarSupportedContent"
+              >
+                <ul className="navbar-nav ml-auto">
+                  <li className="nav-item active ">
+                    <a className="nav-link" href="#">
                       Home
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
                       Speakers
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
                       Event Schedule
                     </a>
                   </li>
@@ -55,10 +58,10 @@ export default function Header() {
             </nav>
           </div>
           {/* <!-- /col end--> */}
-          <div class="col-lg-2 d-none d-lg-block">
+          <div className="col-lg-2 d-none d-lg-block">
             <ul>
-              <li class="header-ticket">
-                <a class="pr-0" href="#">
+              <li className="header-ticket">
+                <a className="pr-0" href="#">
                   Buy Ticket
                 </a>
               </li>

@@ -3,16 +3,16 @@ import React from "react";
 
 export default function About() {
   return (
-    <div class="conference-synopsis-area pad100">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 xs-mb40">
-            <img class="img-fluid" src="assets/img/mockup/man.png" alt="" />
+    <div className="conference-synopsis-area pad100">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 xs-mb40">
+            <img className="img-fluid" src="assets/img/mockup/man.png" alt="" />
           </div>
-          <div class="col-lg-6">
-            <div class="inner-content">
-              <div class="section-title">
-                <div class="title-text pl">
+          <div className="col-lg-6">
+            <div className="inner-content">
+              <div className="section-title">
+                <div className="title-text pl">
                   <h2>Conference Synopsis</h2>
                 </div>
               </div>
