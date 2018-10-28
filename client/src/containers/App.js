@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -15,7 +16,31 @@ import Advisory from "../components/sponsor/Advisory";
 import BlockProducer from "../components/sponsor/BlockProducer";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      companyList: []
+    };
+  }
+
+  // Enable Realtime updates via Socket.io
+  async componentDidMount() {
+    this.loadCompanies();
+  }
+  // Load posts
+  loadCompanies = async () => {
+    const response = await axios.get("http://localhost:5000/api/companies");
+    this.setState({ companyList: response.data.reverse() });
+  };
+
   render() {
+    const { companyList } = this.state;
+
+    const coorganizes = companyList.filter(e => e.session === "CO");
+    const blockproducer = companyList.filter(e => e.session === "BP");
+    const advisorycommitee = companyList.filter(e => e.session === "AC");
+    const sponsors = companyList.filter(e => e.session === "OS");
+
     return (
       <div>
         <div class="loader">
@@ -31,11 +56,12 @@ class App extends Component {
           <Header />
           <Home />
           <About />
+          <Agenda />
           <Boucher />
-          <Organiser />
-          <BlockProducer />
-          <Advisory />
-          <Sponsor />
+          <Organiser coorganizes={coorganizes} />
+          <BlockProducer blockproducer={blockproducer} />
+          <Advisory advisorycommitee={advisorycommitee} />
+          <Sponsor sponsors={sponsors} />
           <Footer />
         </div>
       </div>

@@ -1,12 +1,39 @@
-const express = require("express");
+const app = require("express")();
+const cors = require("cors");
 const path = require("path");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const passport = require("passport");
 
+const agendaRoute = require("./routes/api/agenda/agenda");
+const companyRoute = require("./routes/api/company/company.route");
 const users = require("./routes/api/users");
 
-const app = express();
+app.use(cors());
+
+// Body parser middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+// DB Config
+const db = require("./config/keys").mongoURI;
+
+// Connect to MongoDB
+mongoose
+  .connect(db)
+  .then(() => console.log("MongoDB Connected"))
+  .catch(err => console.log(err));
+
+// Passport middleware
+app.use(passport.initialize());
+
+// Passport Config
+require("./config/passport")(passport);
 
 // Use Routes
 app.use("/api/users", users);
+app.use("/api/agenda", agendaRoute);
+app.use("/api/company", companyRoute);
 
 // Server static assets if in production
 if (process.env.NODE_ENV === "production") {
