@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 class BlockProducer extends Component {
   render() {
     const bpList = this.props.blockproducer.map(image => (
-      <div className="col-lg-12">
+      <div className="col-md-3">
         <div className="single-sponsers" key={image._id}>
           <a href="#">
             <img
@@ -31,7 +31,13 @@ class BlockProducer extends Component {
           </div>
           {/* <!-- /row end--> */}
           <div className="row">
-            <div className="sponsers-active owl-carousel owl-theme">
+            <div
+              className="sponsers-active owl-carousel owl-theme"
+              style={{
+                display: "flex",
+                justifyContent: "center"
+              }}
+            >
               {bpList}
             </div>
           </div>

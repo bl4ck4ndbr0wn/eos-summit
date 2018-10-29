@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 class Sponsor extends Component {
   render() {
     const sponsorList = this.props.sponsors.map(image => (
-      <div className="col-lg-12">
+      <div className="col-md-3">
         <div className="single-sponsers" key={image._id}>
           <a href="#">
             <img
@@ -32,7 +32,13 @@ class Sponsor extends Component {
           </div>
           {/* <!-- /row end--> */}
           <div className="row">
-            <div className="sponsers-active owl-carousel owl-theme">
+            <div
+              className="sponsers-active owl-carousel owl-theme"
+              style={{
+                display: "flex",
+                justifyContent: "center"
+              }}
+            >
               {sponsorList}
             </div>
           </div>
