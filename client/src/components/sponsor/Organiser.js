@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 class Organiser extends Component {
   render() {
     const organizerList = this.props.coorganizes.map(image => (
-      <div className="col-lg-12">
+      <div className="col-md-3">
         <div className="single-sponsers" key={image._id}>
           <a href="#">
             <img
@@ -30,8 +30,42 @@ class Organiser extends Component {
           </div>
           {/* <!-- /row end--> */}
           <div className="row">
-            <div className="sponsers-active owl-carousel owl-theme">
+            <div
+              className="sponsers-active owl-carousel owl-theme"
+              style={{
+                display: "flex",
+                justifyContent: "center"
+              }}
+            >
               {organizerList}
+              {/* <div class="col-lg-12">
+                <div class="single-sponsers">
+                  <a href="#">
+                    <img src="assets/img/sponsor/1.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="single-sponsers">
+                  <a href="#">
+                    <img src="assets/img/sponsor/3.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="single-sponsers">
+                  <a href="#">
+                    <img src="assets/img/sponsor/1.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="single-sponsers">
+                  <a href="#">
+                    <img src="assets/img/sponsor/3.jpg" alt="" />
+                  </a>
+                </div>
+              </div> */}
             </div>
           </div>
         </div>
