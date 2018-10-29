@@ -14,6 +14,11 @@ export default function Home({ particalsOptions }) {
                 <div data-countdown="2018/11/30" />
               </div>
               <h3 className="text-center">EOS Dapp Summit Conferences</h3>
+              <div class="primary-btn">
+                <a href="#" class="btn-primary">
+                  Register
+                </a>
+              </div>
             </div>
           </div>
           {/* <!-- /col end--> */}

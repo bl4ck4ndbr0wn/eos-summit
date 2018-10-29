@@ -149,7 +149,7 @@ export default class Agenda extends Component {
       </tr>
     ));
     return (
-      <div className="event-schedule-area-two bg-color pad100">
+      <div className="event-schedule-area-two bg-color pad100" id="events">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
