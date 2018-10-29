@@ -8,11 +8,11 @@ export default function Footer() {
           <div className="col-lg-5">
             <div className="am">
               <div className="f-logo">
-                <img
+                {/* <img
                   src="assets/img/epwhite.png"
                   alt=""
                   style={{ height: "198px" }}
-                />
+                /> */}
               </div>
               <div className="border-right" />
             </div>

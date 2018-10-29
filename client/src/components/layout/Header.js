@@ -8,11 +8,11 @@ export default function Header() {
           <div className="col-lg-2">
             <div className="brand-logo">
               <a className="eventex-brand" href="index.html">
-                <img
+                {/* <img
                   src="assets/img/epblack.png"
                   alt=""
                   style={{ height: "60px" }}
-                />
+                /> */}
               </a>
             </div>
           </div>

@@ -7,7 +7,11 @@ export default function About() {
       <div className="container">
         <div className="row">
           <div className="col-lg-6 xs-mb40">
-            <img className="img-fluid" src="assets/img/mockup/man.png" alt="" />
+            <img
+              className="img-fluid"
+              src="assets/img/bg/meetup_4_eosio_home-blue.jpg"
+              alt=""
+            />
           </div>
           <div className="col-lg-6">
             <div className="inner-content">

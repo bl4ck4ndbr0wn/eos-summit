@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Home.css";
 
-export default function Home() {
+export default function Home({ particalsOptions }) {
   return (
     <div className="hero-banner-area home-2 hero-bg-2 parallax no-attm">
       <div className="container">
@@ -13,7 +13,7 @@ export default function Home() {
                 <span className="is-countdown"> </span>
                 <div data-countdown="2018/11/30" />
               </div>
-              <h3>EOS Dapp Summit Conferences</h3>
+              <h3 className="text-center">EOS Dapp Summit Conferences</h3>
             </div>
           </div>
           {/* <!-- /col end--> */}
