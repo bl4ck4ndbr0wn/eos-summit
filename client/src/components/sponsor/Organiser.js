@@ -3,14 +3,16 @@ import PropTypes from "prop-types";
 class Organiser extends Component {
   render() {
     const organizerList = this.props.coorganizes.map(image => (
-      <div className="single-sponsers" key={image._id}>
-        <a href="#">
-          <img
-            src={image.image}
-            alt={image.name}
-            style={{ width: "139px", height: "70px" }}
-          />
-        </a>
+      <div className="col-lg-12">
+        <div className="single-sponsers" key={image._id}>
+          <a href="#">
+            <img
+              src={image.image}
+              alt={image.name}
+              style={{ width: "139px", height: "70px" }}
+            />
+          </a>
+        </div>
       </div>
     ));
     return (
@@ -29,7 +31,7 @@ class Organiser extends Component {
           {/* <!-- /row end--> */}
           <div className="row">
             <div className="sponsers-active owl-carousel owl-theme">
-              <div className="col-lg-12">{organizerList}</div>
+              {organizerList}
             </div>
           </div>
         </div>

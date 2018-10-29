@@ -4,14 +4,16 @@ import PropTypes from "prop-types";
 class Advisory extends Component {
   render() {
     const advisoryList = this.props.advisorycommitee.map(image => (
-      <div className="single-sponsers">
-        <a href="#">
-          <img
-            src={image.image}
-            alt=""
-            style={{ width: "139px", height: "70px" }}
-          />
-        </a>
+      <div className="col-lg-12">
+        <div className="single-sponsers" key={image._id}>
+          <a href="#">
+            <img
+              src={image.image}
+              alt={image.name}
+              style={{ width: "139px", height: "70px" }}
+            />
+          </a>
+        </div>
       </div>
     ));
     return (
@@ -30,7 +32,7 @@ class Advisory extends Component {
           {/* <!-- /row end--> */}
           <div className="row">
             <div className="sponsers-active owl-carousel owl-theme">
-              <div className="col-lg-12">{advisoryList}</div>
+              {advisoryList}
             </div>
           </div>
           {/* <!-- /row end--> */}
