@@ -26,7 +26,7 @@ class LandingPage extends Component {
   }
   // Load posts
   loadCompanies = async () => {
-    const response = await axios.get("http://localhost:5000/api/company");
+    const response = await axios.get("/api/company");
     this.setState({ companyList: response.data.reverse() });
   };
 

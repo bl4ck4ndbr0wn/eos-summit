@@ -17,7 +17,7 @@ export default class Agenda extends Component {
   }
   // Load posts
   loadAgendas = async () => {
-    const response = await axios.get("http://localhost:5000/api/agenda");
+    const response = await axios.get("/api/agenda");
     this.setState({ agendaList: response.data });
   };
 
