@@ -11,12 +11,12 @@ export default class Speaker extends Component {
               <div class="section-title">
                 <h3>Speakers</h3>
                 <span />
-                <p>
+                {/* <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                </p> */}
               </div>
             </div>
             {/* <!-- end col --> */}

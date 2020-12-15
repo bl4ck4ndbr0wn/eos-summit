@@ -8,12 +8,15 @@ export default function Footer() {
           <div class="col-lg-6 col-md-12 col-sm-12 col-12 footer-widget">
             <div class="text-widget">
               <p>
-                <span>EOS</span>
-                Summit ipsum dolor sit amet, consectetuer adipiscing elitsd
-                nonummy nibh euismod tincidunt ut laoreet dolore magn aliquam
-                erat volutpat.Lorem ipsum dolor sit amet, conse adipiscing
-                elit,sed diam nonummy. .Lorem ipsum dolor sit ametur
-                consectetuer adipiscing elit.
+                <span>M</span>
+                Months after its official Mainnet launch, EOS continued to
+                receive support from its growing community. Everyone is waiting
+                to see the progress of this much-hyped blockchain network.
+                <br />
+                The EOS summit will showcase the very best of DAPPS and projects
+                in the EOS ecosystem.
+                <br />
+                Everyone is waiting to see the next big DAPP
               </p>
               <div class="footer-social">
                 <ul>
@@ -47,19 +50,19 @@ export default function Footer() {
               <ul>
                 <li>
                   {" "}
-                  <a href="#">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li>
                   {" "}
-                  <a href="#">Speakers</a>
+                  <a href="#speakers">Speakers</a>
                 </li>
                 <li>
                   {" "}
-                  <a href="#">Sponsors</a>
+                  <a href="#dapp">Dapp Companies</a>
                 </li>
                 <li>
                   {" "}
-                  <a href="#">Partners</a>
+                  <a href="#organizingsponsors">Partners</a>
                 </li>
               </ul>
             </div>
